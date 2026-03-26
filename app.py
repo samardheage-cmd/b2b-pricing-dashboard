@@ -24,7 +24,7 @@ st.markdown(
 # --------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("B2B_Client_Churn_5000.csv")
+    df = pd.read_csv("b2b_pricing_dataset_1000_rows.csv")
     df.columns = df.columns.str.strip().str.replace(" ", "_")
     return df
 
